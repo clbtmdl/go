@@ -44,6 +44,10 @@
 <!-- Main -->
 <main>
   <section class="py-5 text-center container">
+    <!-- Warning -->
+    <div class="alert alert-warning warningmarge" role="alert">
+      Attention ! Les cours sont mis à jours régulièrement, certains fichiers pourraient être obselètes
+    </div>
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">1 BTS CIEL</h1>
@@ -179,7 +183,7 @@
         </div>
 
         <div class="col">
-          <div class="card shadow-sm scale-up scale-up-hover disabled-link">
+          <div class="card shadow-sm scale-up scale-up-hover">
             <a href="cours/srvweblinux">
               <div class="sbadges">
                 <div class="sbadge red-badge"></div>
@@ -227,14 +231,14 @@
         </div>
 
         <div class="col">
-          <div class="card shadow-sm scale-up scale-up-hover disabled-link">
-            <a href="cours/seqpro1">
+          <div class="card shadow-sm scale-up scale-up-hover">
+            <a href="cours/webdev">
               <div class="sbadges">
                 <!-- <div class="sbadge red-badge"></div> -->
                 <!-- <div class="sbadge green-badge"></div> -->
                 <div class="sbadge blue-badge"></div>
               </div>
-              <img src="img/webdev.jpg" class="bd-placeholder-img card-img-top" width="100%" height="auto" alt="Séq. 1 Image">
+              <img src="img/webdev.jpg" class="bd-placeholder-img card-img-top" width="100%" height="auto" alt="webdev Image">
               <div class="card-body">
                 <p class="card-text text-center">6 - WEB DEV</p>
               </div>
@@ -818,6 +822,20 @@
 @media screen and (max-width: 768px) {
   .nophone {
     display: none;
+  }
+}
+
+/* Marge pour la version PC */
+@media screen and (min-width: 768px) {
+  .warningmarge {
+    margin-bottom: -20px;
+  }
+}
+
+/* Marge pour la version téléphone */
+@media screen and (max-width: 767px) {
+  .warningmarge {
+    margin-bottom: 15px;
   }
 }
 

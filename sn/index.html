@@ -44,6 +44,10 @@
 <!-- Main -->
 <main>
   <section class="py-5 text-center container">
+    <!-- Warning -->
+    <div class="alert alert-warning warningmarge" role="alert">
+      Attention ! Les cours sont mis à jours régulièrement, certains fichiers pourraient être obselètes
+    </div>
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">2 BTS CIEL</h1>
@@ -82,7 +86,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm scale-up scale-up-hover disabled-link">
+          <div class="card shadow-sm scale-up scale-up-hover">
             <a href="cours/adminsrv">
               <div class="sbadges">
                 <!-- <div class="sbadge red-badge"></div> -->
@@ -415,6 +419,20 @@
 @media screen and (max-width: 768px) {
   .nophone {
     display: none;
+  }
+}
+
+/* Marge pour la version PC */
+@media screen and (min-width: 768px) {
+  .warningmarge {
+    margin-bottom: -20px;
+  }
+}
+
+/* Marge pour la version téléphone */
+@media screen and (max-width: 767px) {
+  .warningmarge {
+    margin-bottom: 15px;
   }
 }
 
